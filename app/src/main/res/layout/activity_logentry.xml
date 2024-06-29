@@ -1,10 +1,14 @@
 <LinearLayout android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="#7A43A047"
+    android:background="@color/white"
     android:gravity="center"
     android:padding="20px"
     xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/login"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,6 +19,7 @@
         android:layout_height="wrap_content"
         android:hint="Enter your name here"
         android:id="@+id/studname"
+        android:drawableLeft="@drawable/baseline_drive_file_rename_outline_24"
         />
     <TextView
         android:layout_width="match_parent"
@@ -25,7 +30,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter your Admission Number"
-        android:id="@+id/admnno"/>
+        android:id="@+id/admnno"
+        android:drawableLeft="@drawable/baseline_numbers_24"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,29 +41,32 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter your System Number"
-        android:id="@+id/sysno"/>
+        android:id="@+id/sysno"
+        android:drawableLeft="@drawable/baseline_computer_24"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Department Name"
+        android:inputType="number"
         android:layout_margin="20px"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter your Department Name"
-        android:id="@+id/deptname"/>
+        android:id="@+id/deptname"
+        android:drawableLeft="@drawable/baseline_menu_book_24"/>
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="ADD"
-        android:background="#B000897B"
+        android:background="#DC1E88E5"
         android:layout_margin="20px"
         android:id="@+id/addbtn"/>
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="LOGOUT"
-        android:background="#B000897B"
+        android:background="#DC1E88E5"
         android:layout_margin="20px"
         android:id="@+id/logoutbtn"/>
 </LinearLayout>
